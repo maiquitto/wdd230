@@ -14,7 +14,8 @@
         display: flex;
         flex-direction: row;
         background-color: #8BDBDF;
-        padding: 20px;
+        font-size: 18px;
+        padding: 80px;
         align-items: center;
     }
     
@@ -24,15 +25,21 @@
         padding: 40px;
     }
     
-    img {
-        max-width: 200px;
+    .logo img {
+        max-width: 500px;
+    }
+    .facebook img {
+        border-radius: 200px;
+        width: 30px;
+        padding: 10px;
+        margin-left: 40px;
     }
     
     header img {
         padding: 10px;
         box-shadow: 5px 5px 5px #999;
         border-radius: 150px;
-        max-width: 200px;
+        max-width: 50px;
 
     }
     
@@ -58,5 +65,5 @@
     nav ul :hover {
         text-decoration-line: blink;
     }
-    
+       
     }
