@@ -1,72 +1,61 @@
-body {
-    font-size: smaller;
-}
+@media (max-width: 576px) {
+    body {
+        font-size: smaller;
+    }
 
-main {
-    background-color: #effffd;
-    padding: 10px;
-    margin-top: 40px;
-    font-size: 17px;
-}
+    header {
+        font-size: smaller;
+        background-color: #8BDBDF;
+        padding: 20px;
+        align-items: center;
+    }
 
-main img {
-    box-shadow: 5px 5px 5px #999;
-}
+    main {
+        background-color: #effffd;
+        padding: 0px;
+        margin-top: 40px;
+        font-size: 17px;
 
-footer p {
-    text-align: center;
-}
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
 
-header {
-    font-size: smaller;
-    display: flex;
-    flex-direction: column;
-    background-color: #8BDBDF;
-    padding: 20px;
-    align-items: center;
-}
+    .hero {
+        grid-area: 1 / 1 / 2 / 2;
+        width: 100%;
+        height: 100%;
+    }
 
-header h1 {
-    grid-column: 2;
-    grid-row: 1;
-    padding: 20px;
-}
+    .news {
+        grid-area: 4 / 1 / 5 / 2;
+        width: 100%;
+        height: 100%;
+    }
 
-header nav {
-    grid-column: 2/4;
-    grid-row: 2;
-}
+    .event {
+        grid-area: 2 / 1 / 3 / 2;
+        width: 100%;
+        height: 100%;
+    }
 
-header img {
-    padding: 10px;
-    box-shadow: 5px 5px 5px #999;
-    border-radius: 150px;
-    max-width: 200px;
-}
+    .weather {
+        grid-area: 3 / 1 / 3 / 2;
+        width: 100%;
+        height: 100%;
+    }
 
+    .join {
+        grid-area: 6 / 1 / 7 / 2;
+        width: 100%;
+        height: 100%;
+    }
 
-nav li {
-    color: #2155CD;
-    flex: 1 1 auto;
-}
-
-nav a {
-    color: #2155CD;
-    cursor: pointer;
-    text-decoration: none;
-    display: flex;
-	flex-direction: column;
-    padding: 10px;
-    font-size: 25px;
-}
-
-nav ul :hover {
-    text-decoration-line: blink;
-}
-
-footer {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    margin: 0 auto;
+    .spotlight {
+        grid-area: 5 / 1 / 6 / 2;
+        width: 100%;
+        height: 100%;
+    }
 }
