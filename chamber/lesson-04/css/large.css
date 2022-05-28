@@ -15,6 +15,12 @@ nav {
     max-width: 16.666667%;
 }
 
+.col_links,
+.col_social {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     height: 100%;
     width: 50%;
