@@ -1,19 +1,10 @@
 @media (max-width: 576px) {
-    body {
-        font-size: smaller;
-    }
 
-    header {
-        font-size: smaller;
-        background-color: #8BDBDF;
-        padding: 20px;
-        align-items: center;
+    .col_logo {
+        max-width: 30%;
     }
 
     main {
-        background-color: #effffd;
-        padding: 0px;
-        margin-top: 40px;
         font-size: 17px;
 
         display: grid;
@@ -56,6 +47,5 @@
     .spotlight {
         grid-area: 5 / 1 / 6 / 2;
         width: 100%;
-        height: 100%;
     }
 }
