@@ -3,7 +3,6 @@ const datefield = document.querySelector(".datatracker");
 const datefieldUK = document.querySelector("aside"); // for european/family history format with day first.
 
 // derive the current date using a date object
-const now = new Date();
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 	now
 );
@@ -14,3 +13,4 @@ const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
 datefieldUK.innerHTML = `<em>${fulldateUK}</em>`;
+

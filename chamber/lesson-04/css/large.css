@@ -21,6 +21,11 @@ nav {
     align-items: center;
 }
 
+.header_dateNow {
+    text-align: center;
+    padding: 10px 0;
+}
+
 .logo {
     height: 100%;
     width: 50%;
@@ -134,4 +139,11 @@ main {
     border-color: #bbb;
     height: 185px;
     box-shadow: 0 0 10px #999;
+}
+
+/* Footer*/
+
+.copyright {
+    text-align: center;
+    padding: 10px 0;
 }
